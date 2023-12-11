@@ -1,0 +1,14 @@
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\bin\Debug\net8.0\EXEMPLO_FUNDAMENTOS.exe
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\bin\Debug\net8.0\EXEMPLO_FUNDAMENTOS.deps.json
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\bin\Debug\net8.0\EXEMPLO_FUNDAMENTOS.runtimeconfig.json
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\bin\Debug\net8.0\EXEMPLO_FUNDAMENTOS.dll
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\bin\Debug\net8.0\EXEMPLO_FUNDAMENTOS.pdb
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\obj\Debug\net8.0\EXEMPLO_FUNDAMENTOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\obj\Debug\net8.0\EXEMPLO_FUNDAMENTOS.AssemblyInfoInputs.cache
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\obj\Debug\net8.0\EXEMPLO_FUNDAMENTOS.AssemblyInfo.cs
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\obj\Debug\net8.0\EXEMPLO_FUNDAMENTOS.csproj.CoreCompileInputs.cache
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\obj\Debug\net8.0\EXEMPLO_FUNDAMENTOS.dll
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\obj\Debug\net8.0\refint\EXEMPLO_FUNDAMENTOS.dll
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\obj\Debug\net8.0\EXEMPLO_FUNDAMENTOS.pdb
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\obj\Debug\net8.0\EXEMPLO_FUNDAMENTOS.genruntimeconfig.cache
+C:\Users\eueos\Desktop\EXEMPLO_FUNDAMENTOS\obj\Debug\net8.0\ref\EXEMPLO_FUNDAMENTOS.dll
