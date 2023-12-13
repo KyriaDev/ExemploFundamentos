@@ -364,18 +364,74 @@ Calculadora calc = new Calculadora();
 //INTRODUÇÃO AO FOR
 //ESTRUTURA PARA REPETIR UM PEDAÇO DE CÓDIGO.
 //TABUADA
-int numero = 5;
+//int numero = 5;
 
 //O for do contador recebe tês valores > Declaração da Variável, Condição de parada, Incremento(ação).
-for(int contador = 0; contador <= 10; contador++)
-{
-    Console.WriteLine($"{numero} x {contador} = {numero * contador}");
-}
+//for(int contador = 0; contador <= 10; contador++)
+//{
+//    Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+//}
 //Só para quando a condição é falsa, ou requer a parada.
 //É possível debugar o For > Faça um break point, e aperte f5 > Aperte f10 para avançar nas linhas de código.
 //No caso das estruturas de repetição, o debug vai executando a repetição, passo a passo, até o fim.
 
 //INTRODUÇÃO AO WHILE
+//WHILE = ENQUANTO./Enquanto uma condição for verdadeira, ele executa o bloco de código, linha por linha, na ordem..
+//É necessário tomar cuidado pra não criar um loop infinito, com a condição sempre sendo verdadeira.
+//FAZENDO UMA TABUADA
+
+// int numero = 5;
+// int contador = 1;
+
+
+// while (contador <= 10)
+// {
+//     Console.WriteLine($"{contador}* Execução: {numero} x {contador} = {numero * contador}");
+//     contador++;
+// }
+//O IF RECEBE 3 BLOCOS DE CÓDIGO, O WHILE APENAS 1 CONDIÇÃO, O WHILE EXIGE MAIS CUIDADO.
+
+//É possível parar o loop antecipadamente ao atingir uma determinada condição.
+//EX: if (contador == 5)
+//    {
+//        break;
+//    }
+//O break também funciona com o FOR
+
+//DEBUGANDO O WHILE
+//Semelhante ao FOR, é feito cada execução passo a passo, até o fim do loop.
+
+//INTRODUÇÃO AO DO WHILE
+//É uma extensão do WHILE, porém a condição fica no final do código.
+//O código é executado indenpendente da condição.
+
+
+//É possível declarar várias variáveis de mesmo tipo, na mesma linha.
+int soma = 0, numero = 0;
+
+do 
+{
+   Console.WriteLine("Digite um número (0 para parar) ");
+   numero = Convert.ToInt32(Console.ReadLine());
+
+   soma += numero;
+
+} while(numero != 0);
+//A execução continua enquanto o número digitado for diferente de 0.
+
+Console.WriteLine($"Total da soma dos números digitados é: {soma}");
+
+//DEBUGANDO O DO WHILE
+
+
+
+
+
+
+
+
+
+
 
 
 
