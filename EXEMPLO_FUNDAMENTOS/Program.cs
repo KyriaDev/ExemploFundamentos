@@ -359,6 +359,30 @@ Calculadora calc = new Calculadora();
 //calc.RaizQuadrada(9);
 
 
+//INTRODUÇÃO ESTRUTURAs DE REPETIÇÃO: FOR, WHILE, DO WHILE.
+//MUITO IMPORTANTE > LAÇO DE REPETIÇÃO.
+//INTRODUÇÃO AO FOR
+//ESTRUTURA PARA REPETIR UM PEDAÇO DE CÓDIGO.
+//TABUADA
+int numero = 5;
+
+//O for do contador recebe tês valores > Declaração da Variável, Condição de parada, Incremento(ação).
+for(int contador = 0; contador <= 10; contador++)
+{
+    Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+}
+//Só para quando a condição é falsa, ou requer a parada.
+//É possível debugar o For > Faça um break point, e aperte f5 > Aperte f10 para avançar nas linhas de código.
+//No caso das estruturas de repetição, o debug vai executando a repetição, passo a passo, até o fim.
+
+//INTRODUÇÃO AO WHILE
+
+
+
+
+
+
+
 //
 
 
