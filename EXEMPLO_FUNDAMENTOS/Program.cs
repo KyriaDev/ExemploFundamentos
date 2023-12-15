@@ -407,22 +407,127 @@ Calculadora calc = new Calculadora();
 
 
 //É possível declarar várias variáveis de mesmo tipo, na mesma linha.
-int soma = 0, numero = 0;
+//int soma = 0, numero = 0;
 
-do 
-{
-   Console.WriteLine("Digite um número (0 para parar) ");
-   numero = Convert.ToInt32(Console.ReadLine());
+//do 
+//{
+//   Console.WriteLine("Digite um número (0 para parar) ");
+//   numero = Convert.ToInt32(Console.ReadLine());
 
-   soma += numero;
+//   soma += numero;
 
-} while(numero != 0);
+//} while(numero != 0);
 //A execução continua enquanto o número digitado for diferente de 0.
 
-Console.WriteLine($"Total da soma dos números digitados é: {soma}");
+//Console.WriteLine($"Total da soma dos números digitados é: {soma}");
 
 //DEBUGANDO O DO WHILE
+//Se o ReadLine não funciona no Debug.
+//Ver vídeo no youtube sobre.
 
+
+//CONSTRUINDO UM MENU INTERATIVO >  utilizando o WHILE
+
+
+// string opcao;
+
+
+// while(true)
+// {
+//     Console.Clear();
+//     Console.WriteLine("Digite a sua opção:");
+//     Console.WriteLine("1 - Cadastrar cliente");
+//     Console.WriteLine("2 - Buscar cliente");
+//     Console.WriteLine("3 - Apagar cliente");
+//     Console.WriteLine("4 - Encerrar");
+
+//     opcao = Console.ReadLine();
+
+//     switch(opcao)
+//     {
+//         case "1":
+//             Console.WriteLine("Cadastro de cliente");
+//             break;
+//         case "2":
+//             Console.WriteLine("Busca de cliente");
+//             break;
+//         case "3":
+//             Console.WriteLine("Apagar cliente");
+//             break;
+//         case "4":
+//             Console.WriteLine("Encerrar");
+//             Environment.Exit(0);
+//             break;
+        
+//         default:
+//              Console.WriteLine("Opção inválida");
+//              break;
+//     }
+// }
+// Console.WriteLine("O programa se encerrou");
+
+//REFATORANDO O MENU > ser possível sair do loop, sem encerrar o códigp.
+
+// string opcao;
+// bool exibirMenu = true;
+
+// while(exibirMenu)
+// {
+//     Console.Clear();
+//     Console.WriteLine("Digite a sua opção:");
+//     Console.WriteLine("1 - Cadastrar cliente");
+//     Console.WriteLine("2 - Buscar cliente");
+//     Console.WriteLine("3 - Apagar cliente");
+//     Console.WriteLine("4 - Encerrar");
+
+//     opcao = Console.ReadLine();
+
+//     switch(opcao)
+//     {
+//         case "1":
+//             Console.WriteLine("Cadastro de cliente");
+//             break;
+//         case "2":
+//             Console.WriteLine("Busca de cliente");
+//             break;
+//         case "3":
+//             Console.WriteLine("Apagar cliente");
+//             break;
+//         case "4":
+//             Console.WriteLine("Encerrar");
+//             exibirMenu = false;
+//             break;
+        
+//         default:
+//              Console.WriteLine("Opção inválida");
+//              break;
+//     }
+// }
+// Console.WriteLine("O programa se encerrou");
+
+//
+
+//ARRAY E LISTAS
+//Introdução Array
+//O Array é uma estrutura de dados que armazena valores do mesmo tipo, com um tamanho fixo.
+//O Array é basicamente uma variável, que pode armazenar vários valores.
+//Com isso, quando lhe é atribuido um novo(s) valor(es), seu(s) valor(es) anterior(es) é(são) apagado(s).
+//EX DE FORMAS DE DECLARAR:
+    //  tipo/nome da var/declaração
+//1.    int[] array = new int [4];
+//2.    int[] array = new int[] {42, 75, 74, 61};
+//3.    string[] nomes = {"Jan, "Fev };
+
+//Como acessar os valores de uma array > ÍNDICE
+//ÍNDICE: É a posição de um determinado valor de um array, sempre começando com zero.
+//VALORES > 42/75/74/61
+//POSIÇÃO >  0/ 1/ 2/ 3
+//1. int elemento = array[0];
+//Atribuindo um número
+//2. array[0] = 42;
+//Se você tentar por uma posição que não existe no seu array, o proggrama vai quebrar.
+
+//IMPLEMENTANDO UM ARRAY DE INTEIROS
 
 
 
