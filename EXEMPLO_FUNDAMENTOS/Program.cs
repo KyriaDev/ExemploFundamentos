@@ -529,6 +529,42 @@ Calculadora calc = new Calculadora();
 
 //IMPLEMENTANDO UM ARRAY DE INTEIROS
 
+int[] arrayInteiros = new int[3];
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+//arrayInteiros[4] = 1; > vai dar excessáo no código.
+
+Console.WriteLine("Percorrendo um Array com o FOR");
+//Percorrendo um Array com o FOR
+for(int contador = 0; contador < arrayInteiros.Length; contador++)
+{
+    Console.WriteLine($"Posição N° {contador} = {arrayInteiros[contador]}");
+}
+//Acessando um índice inválido > impossível.
+//arrayInteiros[3] = 1;
+
+Console.WriteLine("Percorrendo um Array com o FOREACH");
+//Percorrendo um Array com o FOREACH
+int contadorForeach = 0;
+foreach(int valor in arrayInteiros)
+{
+    Console.WriteLine($"Posição N° {contadorForeach} = {valor}");
+    contadorForeach++;
+}
+//FOREACH = para cada. Para cada elemento no Array de inteiros, o valur foi jogado para variável valor.
+//Após isso, eles foram imprimdos no console (os valores).
+//A desvantagem do FOREACH é a sintaxe demasiadamente simplicizada, exigindo que para melhor controle se use meios externos.
+//O FOREACH funciona apenas para Listas e Arrays.
+
+//Debugando um Array
+//1° > criar um ponto de interrupção. 2° > Apertar f5. 3° > Apertar f10 para avançar nas linhas de código, e executá-las.
+//4° > Basicamente, é semelhante a Debugar o for.
+
+//É possível percorrer a sua Array tanto com o FOR quanto com o FOREACH, ambos são seguros
+
+//Redimensionando um Array
 
 
 
