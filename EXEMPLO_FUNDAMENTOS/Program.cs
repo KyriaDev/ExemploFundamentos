@@ -529,30 +529,30 @@ Calculadora calc = new Calculadora();
 
 //IMPLEMENTANDO UM ARRAY DE INTEIROS
 
-int[] arrayInteiros = new int[3];
+//int[] arrayInteiros = new int[3];
 
-arrayInteiros[0] = 72;
-arrayInteiros[1] = 64;
-arrayInteiros[2] = 50;
+//arrayInteiros[0] = 72;
+//arrayInteiros[1] = 64;
+//arrayInteiros[2] = 50;
 //arrayInteiros[4] = 1; > vai dar excessáo no código.
 
-Console.WriteLine("Percorrendo um Array com o FOR");
+//Console.WriteLine("Percorrendo um Array com o FOR");
 //Percorrendo um Array com o FOR
-for(int contador = 0; contador < arrayInteiros.Length; contador++)
-{
-    Console.WriteLine($"Posição N° {contador} = {arrayInteiros[contador]}");
-}
+//for(int contador = 0; contador < arrayInteiros.Length; contador++)
+//{
+//    Console.WriteLine($"Posição N° {contador} = {arrayInteiros[contador]}");
+//}
 //Acessando um índice inválido > impossível.
 //arrayInteiros[3] = 1;
 
-Console.WriteLine("Percorrendo um Array com o FOREACH");
+//Console.WriteLine("Percorrendo um Array com o FOREACH");
 //Percorrendo um Array com o FOREACH
-int contadorForeach = 0;
-foreach(int valor in arrayInteiros)
-{
-    Console.WriteLine($"Posição N° {contadorForeach} = {valor}");
-    contadorForeach++;
-}
+//int contadorForeach = 0;
+//foreach(int valor in arrayInteiros)
+//{
+//    Console.WriteLine($"Posição N° {contadorForeach} = {valor}");
+//    contadorForeach++;
+//}
 //FOREACH = para cada. Para cada elemento no Array de inteiros, o valur foi jogado para variável valor.
 //Após isso, eles foram imprimdos no console (os valores).
 //A desvantagem do FOREACH é a sintaxe demasiadamente simplicizada, exigindo que para melhor controle se use meios externos.
@@ -564,7 +564,27 @@ foreach(int valor in arrayInteiros)
 
 //É possível percorrer a sua Array tanto com o FOR quanto com o FOREACH, ambos são seguros
 
-//Redimensionando um Array
+//Redimensionando um Array > Redimensionando a capacidade de um Array, quando o código já está rodando.
+int[] arrayInteiros = new int[3];
+//AVISO: O ARRAY NASCE E MORRE COM UMA CAPACIDADE FIXA, O QUE ACONTECE NA REDIMENSIONAÇÃO É UMA CÓPIA DO ARRAY SER CRIADA (UM NOVO ARRAY), E A VERSÃO ORIGINAL SER "DESCARTADA" E A REFERÊNCIA DO ORIGINAL É PASSADA PARA A CÓPIA.
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+//O comando para fazer isso, através da classe Array.
+//Nesse caso a capacidade é dobrada.
+//Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
+//Copiando um Array para outro e alterando o tamanho (nesse caso dobrando)
+int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
+Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+Console.WriteLine("Percorrendo um Array com o FOR");
+for(int contador = 0; contador < arrayInteiros.Length; contador++)
+{
+    Console.WriteLine($"Posição N° {contador} = {arrayInteiros[contador]}");
+}
+
+//TRABALHANDO COM LISTAS
 
 
 
