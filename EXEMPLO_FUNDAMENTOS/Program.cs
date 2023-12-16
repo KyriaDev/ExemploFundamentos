@@ -1,4 +1,4 @@
-﻿//CONVENÇÕES DO C#
+//CONVENÇÕES DO C#
 
 //Variáveis seguem a convenção camelCase
 // > 1° palavra começa com minúscula e a
@@ -17,6 +17,45 @@
 
 //Outra convenção para o nome de classes é de que
 //o nome do arquivo que armazena a classe, deve ser igual ao da classe.
+
+
+//TIPOS DE DADOS
+
+//DateTime dataAtual = DateTime.Now.AddDays(0);
+//Console.WriteLine(dataAtual.ToString("dd/MM/yy HH:mm"));
+
+//string apresentacao = "Olá, seja bem vindo.";
+
+//int quantidade = 1;
+//Console.WriteLine("Valor da variável quantidade: " + quantidade);
+//quantidade = 10;
+//Console.WriteLine("Valor da variável quantidade: " + quantidade);
+
+//double altura = 1.80;
+
+//decimal preco = 1.80M;
+
+//bool condicao = true;
+
+
+//Console.WriteLine(apresentacao);
+//Console.WriteLine("Valor da variável quantidade: " + quantidade);
+//Console.WriteLine("Valor da variável altura: " + altura.ToString("0.00"));
+//Console.WriteLine("Valor da variável preco: " + preco);
+//Console.WriteLine("Valor da variável condicao: " + condicao);
+
+//USANDO CLASSES, ATRIBUTOS E MÉTODOS
+
+//using System.Diagnostics.Contracts;
+//using EXEMPLO_FUNDAMENTOS.Models;
+
+//Pessoa desenvolvedora = new Pessoa();
+
+//desenvolvedora.Nome = "Kyria";
+//desenvolvedora.Idade = 13;
+//desenvolvedora.Apresentar();
+
+//Pessoa pessoa_FisicaRepresentacao = new Pessoa();
 
 
 //CONVERSÃO DE VARIÁVEIS PARA TIPOS DIFERENTES
@@ -315,8 +354,9 @@
 
 //CRIANDO A NOSSA CLASSE CALCULADORA
 
-using EXEMPLO_FUNDAMENTOS.Models;
-Calculadora calc = new Calculadora();
+// using System.ComponentModel.DataAnnotations;
+// using EXEMPLO_FUNDAMENTOS.Models;
+// Calculadora calc = new Calculadora();
 
 // calc.Somar(10, 30);
 //calc.Somar(Convert.ToInt32(Console.ReadLine())); > DEU ERRO
@@ -363,17 +403,19 @@ Calculadora calc = new Calculadora();
 //MUITO IMPORTANTE > LAÇO DE REPETIÇÃO.
 //INTRODUÇÃO AO FOR
 //ESTRUTURA PARA REPETIR UM PEDAÇO DE CÓDIGO.
-//TABUADA
+//FAZENDO UMA TABUADA
 //int numero = 5;
 
+//O FOR pode receber variáveis, e códigos que serão executados na ordem em que estão escitos, até todas as condições serem falsas.
 //O for do contador recebe tês valores > Declaração da Variável, Condição de parada, Incremento(ação).
-//for(int contador = 0; contador <= 10; contador++)
-//{
-//    Console.WriteLine($"{numero} x {contador} = {numero * contador}");
-//}
+// for(int contador = 0; contador <= 10; contador++)
+// {
+//     Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+// }
 //Só para quando a condição é falsa, ou requer a parada.
 //É possível debugar o For > Faça um break point, e aperte f5 > Aperte f10 para avançar nas linhas de código.
 //No caso das estruturas de repetição, o debug vai executando a repetição, passo a passo, até o fim.
+//Nesse caso de agora, cada repetição exige 5/6 cliques no f10.
 
 //INTRODUÇÃO AO WHILE
 //WHILE = ENQUANTO./Enquanto uma condição for verdadeira, ele executa o bloco de código, linha por linha, na ordem..
@@ -407,16 +449,16 @@ Calculadora calc = new Calculadora();
 
 
 //É possível declarar várias variáveis de mesmo tipo, na mesma linha.
-//int soma = 0, numero = 0;
+// int soma = 0, numero = 0;
 
-//do 
-//{
-//   Console.WriteLine("Digite um número (0 para parar) ");
-//   numero = Convert.ToInt32(Console.ReadLine());
+// do 
+// {
+//    Console.WriteLine("Digite um número (0 para parar) ");
+//    numero = Convert.ToInt32(Console.ReadLine());
 
-//   soma += numero;
+//    soma += numero;
 
-//} while(numero != 0);
+// } while(numero != 0);
 //A execução continua enquanto o número digitado for diferente de 0.
 
 //Console.WriteLine($"Total da soma dos números digitados é: {soma}");
@@ -529,30 +571,30 @@ Calculadora calc = new Calculadora();
 
 //IMPLEMENTANDO UM ARRAY DE INTEIROS
 
-//int[] arrayInteiros = new int[3];
+// int[] arrayInteiros = new int[3];
 
-//arrayInteiros[0] = 72;
-//arrayInteiros[1] = 64;
-//arrayInteiros[2] = 50;
+// arrayInteiros[0] = 72;
+// arrayInteiros[1] = 64;
+// arrayInteiros[2] = 50;
 //arrayInteiros[4] = 1; > vai dar excessáo no código.
 
 //Console.WriteLine("Percorrendo um Array com o FOR");
 //Percorrendo um Array com o FOR
-//for(int contador = 0; contador < arrayInteiros.Length; contador++)
-//{
-//    Console.WriteLine($"Posição N° {contador} = {arrayInteiros[contador]}");
-//}
+// for(int contador = 0; contador < arrayInteiros.Length; contador++)
+// {
+//     Console.WriteLine($"Posição N° {contador} = {arrayInteiros[contador]}");
+// }
 //Acessando um índice inválido > impossível.
 //arrayInteiros[3] = 1;
 
 //Console.WriteLine("Percorrendo um Array com o FOREACH");
 //Percorrendo um Array com o FOREACH
-//int contadorForeach = 0;
-//foreach(int valor in arrayInteiros)
-//{
-//    Console.WriteLine($"Posição N° {contadorForeach} = {valor}");
-//    contadorForeach++;
-//}
+// int contadorForeach = 0;
+// foreach(int valor in arrayInteiros)
+// {
+//     Console.WriteLine($"Posição N° {contadorForeach} = {valor}");
+//     contadorForeach++;
+// }
 //FOREACH = para cada. Para cada elemento no Array de inteiros, o valur foi jogado para variável valor.
 //Após isso, eles foram imprimdos no console (os valores).
 //A desvantagem do FOREACH é a sintaxe demasiadamente simplicizada, exigindo que para melhor controle se use meios externos.
@@ -565,24 +607,25 @@ Calculadora calc = new Calculadora();
 //É possível percorrer a sua Array tanto com o FOR quanto com o FOREACH, ambos são seguros
 
 //Redimensionando um Array > Redimensionando a capacidade de um Array, quando o código já está rodando.
-int[] arrayInteiros = new int[3];
+//int[] arrayInteiros = new int[3];
 //AVISO: O ARRAY NASCE E MORRE COM UMA CAPACIDADE FIXA, O QUE ACONTECE NA REDIMENSIONAÇÃO É UMA CÓPIA DO ARRAY SER CRIADA (UM NOVO ARRAY), E A VERSÃO ORIGINAL SER "DESCARTADA" E A REFERÊNCIA DO ORIGINAL É PASSADA PARA A CÓPIA.
-arrayInteiros[0] = 72;
-arrayInteiros[1] = 64;
-arrayInteiros[2] = 50;
+// arrayInteiros[0] = 72;
+// arrayInteiros[1] = 64;
+// arrayInteiros[2] = 50;
 //O comando para fazer isso, através da classe Array.
 //Nesse caso a capacidade é dobrada.
 //Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
 
-//Copiando um Array para outro e alterando o tamanho (nesse caso dobrando)
-//int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
-//Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
 
-//Console.WriteLine("Percorrendo um Array com o FOR");
-//for(int contador = 0; contador < arrayInteiros.Length; contador++)
-//{
-//    Console.WriteLine($"Posição N° {contador} = {arrayInteiros[contador]}");
-//}
+//Copiando um Array para outro e alterando o tamanho (nesse caso dobrando)
+// int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
+// Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+// Console.WriteLine("Percorrendo um Array com o FOR");
+// for(int contador = 0; contador < arrayInteiros.Length; contador++)
+// {
+//     Console.WriteLine($"Posição N° {contador} = {arrayInteiros[contador]}");
+// }
 
 //TRABALHANDO COM LISTAS
 //Lista = "Array melhorado", um "Array menos complexo".
@@ -625,50 +668,4 @@ arrayInteiros[2] = 50;
 // }
 //O FOREACH é o mais recomendado.
 
-
-
-
-
-
-
-
-//
-
-
-//TIPOS DE DADOS
-
-//DateTime dataAtual = DateTime.Now.AddDays(0);
-//Console.WriteLine(dataAtual.ToString("dd/MM/yy HH:mm"));
-
-//string apresentacao = "Olá, seja bem vindo.";
-
-//int quantidade = 1;
-//Console.WriteLine("Valor da variável quantidade: " + quantidade);
-//quantidade = 10;
-//Console.WriteLine("Valor da variável quantidade: " + quantidade);
-
-//double altura = 1.80;
-
-//decimal preco = 1.80M;
-
-//bool condicao = true;
-
-
-//Console.WriteLine(apresentacao);
-//Console.WriteLine("Valor da variável quantidade: " + quantidade);
-//Console.WriteLine("Valor da variável altura: " + altura.ToString("0.00"));
-//Console.WriteLine("Valor da variável preco: " + preco);
-//Console.WriteLine("Valor da variável condicao: " + condicao);
-
-//USANDO CLASSES, ATRIBUTOS E MÉTODOS
-
-//using System.Diagnostics.Contracts;
-//using EXEMPLO_FUNDAMENTOS.Models;
-
-//Pessoa desenvolvedora = new Pessoa();
-
-//desenvolvedora.Nome = "Kyria";
-//desenvolvedora.Idade = 13;
-//desenvolvedora.Apresentar();
-
-//Pessoa pessoa_FisicaRepresentacao = new Pessoa();
+//PROPIEDADES, MÉTODOS E CONSTRUTORES
